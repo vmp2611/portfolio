@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyom Patel - Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .experience-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #4cc9f0, #7209b7);
+        }
+
+        .experience-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            width: calc(50% - 40px);
+            margin-left: auto;
+        }
+
+        .experience-card:nth-child(even) {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .job-title {
+            font-size: 1.8em;
+            color: #4cc9f0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .company-info {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .date-location {
+            display: flex;
+            justify-content: space-between;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        .responsibilities {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .responsibilities li {
+            color: rgba(255, 255, 255, 0.9);
+            margin: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .responsibilities li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #4cc9f0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #00b4d8, #0077b6);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .experience-card {
+                width: calc(100% - 40px);
+                margin-left: 40px;
+            }
+
+            .experience-card:nth-child(even) {
+                margin-left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="experience-container">
+        <div class="timeline">
+            <div class="experience-card">
+                <h2 class="job-title">
+                    <i class="fas fa-laptop-code"></i>
+                    IT Support Intern
+                </h2>
+                <div class="company-info">Y and H Patel</div>
+                <div class="date-location">
+                    <span>09/2022 – 08/2023</span>
+                    <span>Ahmedabad, India</span>
+                </div>
+                <ul class="responsibilities">
+                    <li>Supported data engineering pipelines and improved data structure for reporting needs.</li>
+                    <li>Built and maintained well-structured SQL queries and assisted with data modeling.</li>
+                    <li>Developed BI dashboards and summaries, aiding business insights and stakeholder communication.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <h2 class="job-title">
+                    <i class="fas fa-user-tie"></i>
+                    Assistant Manager
+                </h2>
+                <div class="company-info">Little Caesars</div>
+                <div class="date-location">
+                    <span>08/2023 – Present</span>
+                    <span>Fredericton, Canada</span>
+                </div>
+                <ul class="responsibilities">
+                    <li>Led daily operations, handled customer concerns, and ensured service efficiency.</li>
+                    <li>Trained staff on POS tools and updated team processes using digital workflow systems.</li>
+                    <li>Strengthened team coordination and independent decision-making under pressure.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="center">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+</body>
+</html> 

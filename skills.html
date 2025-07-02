@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyom Patel - Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .skills-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .skill-category {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            color: #4cc9f0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: rgba(76, 201, 240, 0.1);
+            padding: 8px 15px;
+            border-radius: 15px;
+            color: #4cc9f0;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill-item:hover {
+            background: rgba(76, 201, 240, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .skill-icon {
+            font-size: 1.1em;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #00b4d8, #0077b6);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-cloud"></i>
+                    Cloud
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fab fa-aws skill-icon"></i>
+                        Amazon Web Services (AWS)
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-database"></i>
+                    Database
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        MySQL
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database skill-icon"></i>
+                        PostgreSQL
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-tools"></i>
+                    Tools
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fab fa-microsoft skill-icon"></i>
+                        Azure DevOps
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-chart-bar skill-icon"></i>
+                        PowerBI
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-github skill-icon"></i>
+                        Git/GitHub
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-paper-plane skill-icon"></i>
+                        Postman
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        VSCode
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        Visual Studio
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-code"></i>
+                    Languages
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fab fa-java skill-icon"></i>
+                        Java
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-hashtag skill-icon"></i>
+                        C#
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python skill-icon"></i>
+                        Python
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        C
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code skill-icon"></i>
+                        C++
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js skill-icon"></i>
+                        JavaScript
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js skill-icon"></i>
+                        TypeScript
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        HTML5
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        CSS
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-window-maximize"></i>
+                    FrontEnd
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fab fa-react skill-icon"></i>
+                        ReactJS
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react skill-icon"></i>
+                        NextJS
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h2 class="category-title">
+                    <i class="fas fa-server"></i>
+                    BackEnd
+                </h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i class="fab fa-node-js skill-icon"></i>
+                        NodeJS
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+</body>
+</html> 
