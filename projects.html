@@ -51,12 +51,6 @@
             color: #4cc9f0;
         }
 
-        .project-description {
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.6;
-            margin: 15px 0;
-        }
-
         .project-points {
             list-style: none;
             padding: 0;
@@ -115,10 +109,30 @@
 </head>
 <body>
     <div class="projects-container">
+
+        <!-- Portfolio Website -->
+        <div class="project-card">
+            <h2 class="project-title">
+                <i class="fas fa-laptop-code"></i>
+                Personal Portfolio Website
+            </h2>
+            <div class="tech-stack">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+            </div>
+            <ul class="project-points">
+                <li>Designed and developed a personal portfolio to showcase projects, skills, and contact information.</li>
+                <li>Implemented responsive design, smooth navigation, and interactive UI elements.</li>
+                <li>Hosted on GitHub Pages for public access and version control.</li>
+            </ul>
+        </div>
+
+        <!-- Serverless Food Delivery -->
         <div class="project-card">
             <h2 class="project-title">
                 <i class="fas fa-robot"></i>
-                AI-Driven Food Delivery System
+                AI-Driven Serverless Food Delivery System
             </h2>
             <div class="tech-stack">
                 <span class="tech-badge">AWS</span>
@@ -128,11 +142,13 @@
                 <span class="tech-badge">QuickSight</span>
             </div>
             <ul class="project-points">
-                <li>Designed backend workflows using serverless tools and implemented real-time API integration.</li>
-                <li>Created dashboards to monitor service requests and visualize performance data.</li>
+                <li>Developed serverless backend workflows and integrated real-time API endpoints.</li>
+                <li>Created dashboards to monitor delivery performance and visualize KPIs.</li>
+                <li>Applied Python scripts for data preprocessing and linking metrics to operations.</li>
             </ul>
         </div>
 
+        <!-- SKYVE Game -->
         <div class="project-card">
             <h2 class="project-title">
                 <i class="fas fa-gamepad"></i>
@@ -145,28 +161,12 @@
             </div>
             <ul class="project-points">
                 <li>Developed a multi-level 2D game featuring AI-based enemy behavior and real-time debugging logs.</li>
-                <li>Conducted player data collection for difficulty balancing and gameplay improvement.</li>
-                <li>Managed source control and project documentation to mirror production-grade pipeline.</li>
+                <li>Collected player data for difficulty balancing and gameplay improvement.</li>
+                <li>Managed source control and project documentation following production-grade workflow.</li>
             </ul>
             <a href="#" class="play-button">
                 <i class="fas fa-play"></i> Play Game
             </a>
-        </div>
-
-        <div class="project-card">
-            <h2 class="project-title">
-                <i class="fas fa-chart-line"></i>
-                Expense Tracker Dashboard
-            </h2>
-            <div class="tech-stack">
-                <span class="tech-badge">Java</span>
-                <span class="tech-badge">MySQL</span>
-                <span class="tech-badge">HTML/CSS</span>
-            </div>
-            <ul class="project-points">
-                <li>Built a user-facing financial tool to track and summarize monthly expenses.</li>
-                <li>Designed dynamic reports and integrated backend database interactions.</li>
-            </ul>
         </div>
 
         <div class="center">
@@ -176,5 +176,4 @@
         </div>
     </div>
 </body>
-
-</html> 
+</html>
